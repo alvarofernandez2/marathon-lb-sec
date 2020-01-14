@@ -10,7 +10,7 @@ ADD http://sodio.stratio.com/repository/paas/kms_utils/${SEC_UTILS_VERSION}/kms_
 ADD http://sodio.stratio.com/repository/paas/log_utils/${SEC_UTILS_VERSION}/b-log-${SEC_UTILS_VERSION}.sh /usr/sbin/b-log.sh
 
 # runtime dependencies
-RUN apt-get update && apt-get install -y --no-install-recommends \
+RUN apt-get update && apt-get install -y \
         ca-certificates \
         inetutils-syslogd \
         libcurl4 \
@@ -73,7 +73,7 @@ RUN set -x \
         zlib1g-dev \
     ' \
     && apt-get update \
-    && apt-get install -y --no-install-recommends $buildDeps \
+    && apt-get install -y $buildDeps \
     && rm -rf /var/lib/apt/lists/* \
     \
 # Build HAProxy
