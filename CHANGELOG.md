@@ -2,7 +2,7 @@
 
 ## 0.8.0 (upcoming)
 
-* Pending changelog
+* [EOS-3882] Include dcos-spartan/net resolvers in default template
 
 ## 0.7.0-62c453c (Built: June 01, 2020 | Released: June 19, 2020)
 

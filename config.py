@@ -103,6 +103,12 @@ listen stats
   http-request use-service lua.signalmlbhup if signalmlbhup
   acl signalmlbusr1 path /_mlb_signal/usr1
   http-request use-service lua.signalmlbusr1 if signalmlbusr1
+
+resolvers dcos-spartan
+  nameserver dns1 198.51.100.1:53
+  nameserver dns2 198.51.100.2:53
+  nameserver dns3 198.51.100.3:53
+  accepted_payload_size 8192 # allow larger DNS payloads
 ''',
                            overridable=False,
                            description='''\
