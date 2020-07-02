@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.7.1 (upcoming)
+
+* [EOS-3882] Include dcos-spartan/net resolvers in default template
+
 ## 0.7.0 (June 01, 2020)
 
 * Change Anchore policy
